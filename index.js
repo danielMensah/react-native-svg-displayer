@@ -238,6 +238,10 @@ class SvgUri extends Component{
       }, {});
     Object.assign(componentAtts, styleAtts);
 
+    if(this.props.fill){
+      componentAtts.fill = this.props.fill;
+    }
+
     return componentAtts;
   }
 
